@@ -1,0 +1,192 @@
+/* NÃO RESPONSIVO!!!!!
+TELA DE REVERENCIA: MACBOOK AIR (1280 X 800) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+/* reset and base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+a{text-decoration: none;}
+ul{list-style: none;}
+
+body{
+    width: 100%;
+}
+.container{
+    padding: 0 var(--pd-3);
+}
+
+:root{
+    --red: #ee0000;
+    --sec-red: #b40000;
+    --black: #010101;
+    --white: #f9f9f9;
+
+    --ex-bold: 800;
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500;
+    --regular: 400;
+
+    --fs-1: 0.938rem;
+    --fs-2: 1.125rem;
+    --fs-3: 1.25rem;
+    --fs-4: 3.75rem;
+    
+    --pd-1: 4.625rem;
+    --pd-2: 0.625rem;
+    --pd-3: 7.75rem;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--pd-1);
+}
+
+.navbar .logo{
+    width: 180px;
+    height: 180px;
+}
+
+.navbar .menu{
+    display: flex;
+    gap: 32px;
+    padding: var(--pd-2);
+}
+
+.navbar .menu li a{
+    color: var(--black);
+    font-size: var(--fs-2);
+    text-transform: uppercase;
+    font-weight: var(--bold);
+}
+
+.navbar .menu-btn{
+    width: 40px;
+    height: 40px;
+}
+
+.menu-btn .bx-menu{
+    font-size: 1.875rem;
+    color: var(--red);
+}
+
+/* main */
+.main-content{
+    width: 100%;
+    margin-top: var(--fs-1);
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main-content .main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.main-content .main-text h1{
+    font-weight: var(--ex-bold);
+    font-size: var(--fs-4);
+    line-height: 75px;
+    overflow: hidden;
+}
+
+.main-content .main-text h3{
+    font-weight: var(--medium);
+    font-size: var(--fs-3);
+}
+
+.main-content .main-text p{
+    width: 495px;
+    margin-top: .75rem;
+    font-weight: var(--regular);
+    font-size: var(--fs-1);
+    text-align: justify;
+}
+
+.main-content .main-text button{
+    width: 240px;
+    height: 66px;
+    margin-top: var(--fs-2);
+    background: linear-gradient(180deg, var(--red) 0%, var(--sec-red) 100%);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    font-size: var(--fs-2);
+    font-weight: var(--semi-bold);
+}
+
+.main-content .main-img img{
+    position: absolute;
+    left:700px;
+    top: 144px;
+}
+
+.credits {
+    width: 300px;
+    rotate: -90deg;
+
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+    font-size: 10px;
+    text-align: justify;
+    word-spacing: 5px;
+    opacity: .3;
+}
+
+.credits p a{
+    color: var(--black);
+    text-decoration: underline !important;
+}
+/* footer */
+.footer-content{
+    width: 100%;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    align-items: center;
+    gap: 90px;
+}
+
+.footer-content .race-details{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-content .race-details h3{
+    width: 92px;
+    text-transform: uppercase;
+    font-size: var(--fs-3);
+    font-weight: var(--bold);
+}
+
+.footer-content .race-details .icons{
+    width: 104px;
+    height: 44px;
+}
+
+.bx-left-arrow-alt,
+.bx-right-arrow-alt{
+   font-size: 30px;
+}
+
+.footer-content .details-img{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
